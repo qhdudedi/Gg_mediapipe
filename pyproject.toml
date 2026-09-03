@@ -1,0 +1,12 @@
+[project]
+name = "mediapipe-ex-win"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "dlib-bin>=20.0.1",
+    "face-recognition-models>=0.3.0",
+    "mediapipe>=1.0.1",
+    "opencv-python>=5.0.0.93",
+    # face_recognition_models 가 pkg_resources 를 쓰는데 setuptools 81 부터 제거됨
+    "setuptools<81",
+]
